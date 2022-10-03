@@ -9,15 +9,11 @@ public class Register {
     }
 
     public List<Paciente> getPacientes() {
-        return pacientes;
+        return this.pacientes;
     }
 
-    public void setPacientes(List<Paciente> pacientes) {
-        pacientes = pacientes;
-    }
-
-    public void pacientesMayores() {
-        List<Paciente> pacientesMayores = new ArrayList<>();
+    public ArrayList<Paciente> pacientesMayores() {
+        ArrayList<Paciente> pacientesMayores = new ArrayList<>();
         System.out.println("Pacientes mayores");
         for (int i = 0; i < pacientes.size(); i++) {
             if (this.pacientes.get(i).getEdad() >= 60) {
@@ -25,14 +21,15 @@ public class Register {
                 System.out.println(("Rut: "+ pacientes.get(i).getRut()+", Edad "+pacientes.get(i).getEdad()+", Nombre: "+pacientes.get(i).getNombre()+", Apellido: "+pacientes.get(i).getApellido()));
             }
         }
+        return pacientesMayores;
     }
-    public void añadirPacientes(Paciente paciente) {
+    public void anhadirPacientes(Paciente paciente) {
         pacientes.add(paciente);
     }
     public void buscarPaciente(String nombre){
         System.out.println("Buscando "+nombre);
         for (int i=0;i<pacientes.size();i++){
-            if (this.pacientes.get(i).getNombre().equals(nombre)) {
+            if (this.pacientes.get(i).getNombre().equalsIgnoreCase(nombre)) {
                 System.out.println(("Rut: "+ pacientes.get(i).getRut()+", Edad "+pacientes.get(i).getEdad()+", Nombre: "+pacientes.get(i).getNombre()+", Apellido: "+pacientes.get(i).getApellido()));
             }
         }

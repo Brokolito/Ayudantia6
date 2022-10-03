@@ -6,8 +6,8 @@ public class Launcher {
     }
     public static void Introduccion(){
         Register register=new Register();
-        register.añadirPacientes(new Paciente("Marcelo","Castro",18620208-2,70));
-        register.añadirPacientes(new Paciente("Walter","Wenchumilla",7394710-3,20));
+        register.anhadirPacientes(new Paciente("Marcelo","Castro",18620208-2,70));
+        register.anhadirPacientes(new Paciente("Walter","Wenchumilla",7394710-3,20));
         register.buscarPaciente("Marcelo");
         register.mostrarPacientes();
         register.pacientesMayores();

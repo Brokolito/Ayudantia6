@@ -31,10 +31,6 @@ public class Paciente {
         return Rut;
     }
 
-    public void setRut(int rut) {
-        Rut = rut;
-    }
-
     public int getEdad() {
         return Edad;
     }
