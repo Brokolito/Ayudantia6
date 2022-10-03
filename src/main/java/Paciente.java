@@ -5,10 +5,10 @@ public class Paciente {
     private int Edad;
 
     public Paciente(String Nombre, String Apellido, int Rut, int Edad) {
-    this.Nombre=Nombre;
-    this.Apellido=Apellido;
-    this.Rut=Rut;
-    this.Edad=Edad;
+        this.Nombre = Nombre;
+        this.Apellido = Apellido;
+        this.Rut = Rut;
+        this.Edad = Edad;
     }
 
     public String getNombre() {
@@ -43,3 +43,4 @@ public class Paciente {
         Edad = edad;
     }
 }
+
